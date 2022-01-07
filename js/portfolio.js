@@ -1,9 +1,9 @@
-var modals = document.querySelectorAll('.modal');
+let modals = document.querySelectorAll('.modal');
 let spans = document.querySelectorAll('.close');
 let btn = document.querySelectorAll("button.modal-button");
-let imgModal = document.getElementById("img-modal");
-var img = document.querySelector("#tedx-img");
-var modalImg = document.getElementById("img01");
+let imgModal = document.querySelector("#img-modal");
+let img = document.querySelector("#tedx-img");
+let modalImg = document.querySelector("#img01");
 
 
 // Opens image modal
@@ -31,7 +31,6 @@ for (let i = 0; i < spans.length; i++) {
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", Event => {
-    console.log(Event.target.classList);
     if (Event.target.classList.contains('modal')) {
      for (let j = 0; j < modals.length; j++) {
          modals[j].style.display = "none";    
