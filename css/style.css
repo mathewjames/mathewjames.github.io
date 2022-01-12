@@ -15,7 +15,6 @@ body {
 .intro {
     margin-top: 20%;
     max-height: 200px;
-    _border-style: dotted;
     background-color: rgba(255, 255, 255, 0.9);
 } 
 
@@ -36,7 +35,6 @@ body {
 .heading {
     text-align: center;
     font-family: 'ABeeZee', sans-serif;
-    _border-style: dotted;
     margin: 0;
 }
 
@@ -55,7 +53,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     z-index: 1006;
-    _border-style: dotted;
 }
 
 .btn button {
@@ -219,7 +216,6 @@ footer li:hover {
 }
 
 .section-title h2 {
-    _border-style: dotted;
     padding: 10px;
     margin: 0;
     background-color: rgb(5, 5, 5);
@@ -235,7 +231,6 @@ footer li:hover {
 }
 
 .acheivements h3 {
-    _border-style: dotted;
     padding: 0px 10px;
     margin: 0;
     color: #fff;
@@ -374,7 +369,6 @@ footer li:hover {
     text-align: center;
     margin-bottom: 7px;
     color: #fff;
-    _border-style: dotted;
     font-weight: normal;
 }
 
@@ -541,6 +535,11 @@ footer li:hover {
         font-size: 50px;
     }
 
+    .btn {
+        width: 50%;
+        margin: auto;
+    }
+
     .btn button {
         border-radius: 6px;
         padding: 8px 30px;
@@ -572,7 +571,6 @@ footer li:hover {
     }
 
     .intro {
-        _border-style: dotted;
         flex-basis: 40%;
     }
 
@@ -581,12 +579,15 @@ footer li:hover {
     }
 
     nav {
-        _border-style: dotted;
         flex-basis: 70%;
+    }
+
+    .btn {
+        width: 100%;
+        margin: unset;
     }
     
     .cards {
-        _border-style: dotted;
         position: relative;
         display: grid;
         align-items: center;
@@ -653,5 +654,19 @@ footer li:hover {
 
     .cards img {
         width: 60%;
+    }
+}
+
+@media (max-height: 430px) { 
+    .intro {
+        margin-top: 30px;
+    } 
+
+    .name {
+        font-size: 45px;
+    }
+
+    .btn {
+        padding: 0;
     }
 }
